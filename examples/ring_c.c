@@ -54,7 +54,7 @@ int main(int argc, char *argv[])
 
         if (0 == rank) {
             --message;
-            printf("Process 0 decremented value: %d\n", message);
+            printf("Process 0 DECREMENTED value: %d\n", message);
         }
 
         MPI_Send(&message, 1, MPI_INT, next, tag, MPI_COMM_WORLD);
