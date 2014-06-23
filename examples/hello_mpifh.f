@@ -7,6 +7,7 @@ C $COPYRIGHT$
 C
 C Sample MPI "hello world" application in Fortran 77
 C
+C Uses the *ANTIQUATED* mpif.h interface.
         program main
         implicit none
         include 'mpif.h'
