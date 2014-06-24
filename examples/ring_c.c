@@ -59,7 +59,7 @@ int main(int argc, char *argv[])
 
         MPI_Send(&message, 1, MPI_INT, next, tag, MPI_COMM_WORLD);
         if (0 == message) {
-            printf("Process %d exiting\n", rank);
+            printf("Process %d EXITING\n", rank);
             break;
         }
     }
